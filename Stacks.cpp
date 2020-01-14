@@ -1,3 +1,7 @@
+
+// Can both stacks be emptied, when at each turn one of the stacks has to
+// knock off two sticks and the other one stick. Solve for m pairs of x and y.
+
 #include <iostream>
 
 int main()

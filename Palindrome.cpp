@@ -1,3 +1,6 @@
+
+// Print a palindromic form of a given string if possible
+
 #include <iostream>
 #include <fstream>
 

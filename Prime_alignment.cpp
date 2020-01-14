@@ -1,3 +1,7 @@
+
+// Order two lists of numbers 1 .. n such that the numbers at
+// each position i sum up to a prime number. n <= 1_000_000
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
@@ -44,7 +48,7 @@ void get_alignment(int n)
 
 int main()
 {
-    int n = 61;
+    int n = 1000000;
     std::cin >> n;
 
     get_alignment(n);

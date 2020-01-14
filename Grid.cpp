@@ -1,3 +1,7 @@
+
+// Create a N * N grid such that each row and column sums to a unique integer.
+// Each number 1..N has to be used N times in the grid. N <= 1000.
+
 #include <iostream>
 #include <vector>
 #include <unordered_set>

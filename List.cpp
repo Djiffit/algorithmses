@@ -1,3 +1,6 @@
+
+// Create list of numbers such that difference between neighbours is > 1
+
 #include <iostream>
 #include <vector>
 
