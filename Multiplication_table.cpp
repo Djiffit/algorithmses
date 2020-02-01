@@ -1,3 +1,5 @@
+// What is the median of a n * n multiplicative table? n < 10e6
+
 #include <iostream>
 #include <vector>
 #include <algorithm>

@@ -1,3 +1,6 @@
+// Given n pairs of start and end times for schedules, which is the first one
+// you can't fulfill. n <= 5*10e5, 1 <= startd <= end <= 10e9
+
 #include <iostream>
 #include <vector>
 #include <algorithm>
