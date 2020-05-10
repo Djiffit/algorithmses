@@ -12,14 +12,14 @@ string match;
 
 struct Trie
 {
-    struct Trie *children[128];
+    struct Trie *children[32];
     long visits = 0;
 };
 
 Trie *createNode()
 {
     struct Trie *node = new Trie;
-    for (int i = 0; i < 128; i++)
+    for (int i = 0; i < 32; i++)
         node->children[i] = NULL;
     return node;
 }
@@ -28,7 +28,7 @@ Trie *insert(struct Trie *root, string key)
     struct Trie *curr = root;
     for (int i = 0; i < key.length(); i++)
     {
-        int index = key[i] - 'A';
+        int index = key[i] - 'a';
         if (!curr->children[index])
             curr->children[index] = createNode();
         curr = curr->children[index];
@@ -40,7 +40,7 @@ void search(struct Trie *root, string &key, int i, int max_len)
     struct Trie *curr = root;
     while (i < max_len)
     {
-        int index = key[i] - 'A';
+        int index = key[i] - 'a';
         if (!curr->children[index])
             return;
         curr = curr->children[index];

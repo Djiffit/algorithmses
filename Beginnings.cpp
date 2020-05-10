@@ -67,6 +67,7 @@ int main()
     for (int i = 0; i < num; i++)
     {
         cin >> match;
+        match = inp_word.substr(0, 5000);
         auto node = insert(root, match);
         tries.push_back(node);
     }
